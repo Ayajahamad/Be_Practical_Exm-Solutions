@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown Menu</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+</head>
+<body>
+    
+    <section class="dropDownMenu">
+        <h1>Here is The DropDown Menu For Some Indian Players</h1>
+         <p>Plz Click the Below Box to select the player</p>   
+        <input type="text" name="indplayers" id="indplayers" placeholder="Select The Player" list="india">
+        <datalist id="india">
+            <option>Sachin Tendulkar</option>
+            <option>Brain Lara</option>
+            <option>Kapil Dev</option>
+            <option>Yusuf Pathan</option>
+            <option>Irfan Pathan</option>
+            <option>Siddu</option>
+            <option>Jadeja</option>
+            <option value="Kumar"></option>
+            <option value="">Hariprasad</option>
+            <option value="Dhoni">Dhoni</option>
+        </datalist>
+    </section>
+    <hr>
+    <section>
+        <fieldset>
+            <legend>Select Option</legend>
+            <p>This is dropdown and is used for select only one option</p>
+
+            <label for="">Select Qulalification:</label>
+            <select name="qulification" id="qulification">
+                <option value="" disabled>----Select your Qulalification----</option>
+                <option value="">10th</option>
+                <option value="">12th (PUC)</option>
+                <option value="">Diploma</option>
+                <option value="" selected>Digree</option>
+                <option value="">Master Degree</option>
+                <option value=""></option>
+                <option value="Master Degree"></option>
+                <option value="PHD">PHD</option>
+                <option>M Phill</option>
+
+                <optgroup>
+                    <option value="">BE in CS</option>
+                    <option value="">BE in EC</option>
+                    <option value="">BE in EE</option>
+                    <option value="">BE in Civil</option>
+                    <option value="">BE in Mech</option>
+                </optgroup>
+
+                <optgroup>
+                    <option value="">ME in CS</option>
+                    <option value="">ME in EC</option>
+                    <option value="">ME in EE</option>
+                    <option value="">ME in Civil</option>
+                    <option value="">ME in Mech</option>
+                </optgroup>
+                
+            </select>
+        </fieldset>
+    </section>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Model</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/media.css">
+    </head>
+    <body>
+        <button type="button" id="openDialog">Click Here To See The Model</button>
+        <h1>I Have Created A model Here Please Click the Above Button To See The Model</h1>
+
+        <dialog id="dialogID" class="dialogBox">
+            <button type="button" id="closedialog">&times;</button>
+            <h1>FILLSTACK..!</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam magni, illum aut consectetur odit quas? Placeat, quis velit. Commodi, alias. Culpa fugiat enim consectetur cupiditate deserunt veniam asperiores doloribus iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod veniam saepe tenetur ratione quas similique blanditiis nulla doloribus atque? Nulla aut velit sequi. Vitae ad maiores cupiditate soluta rem nemo!</p>
+            <img src="assets/images/boy.png" alt="">
+            <img src="assets/images/girl.png" alt="">
+            <img src="assets/images/classroom.png" alt="">
+        </dialog>
+
+        <script>
+            document.getElementById("openDialog").onclick=
+                function(){
+                    document.getElementById("dialogID").show();
+                };
+
+                document.getElementById("closedialog").onclick=
+                function(){
+                    document.getElementById("dialogID").close();
+                }; 
+        </script>
+    </body>
+</html>

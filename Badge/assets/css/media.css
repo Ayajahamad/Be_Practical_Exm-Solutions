@@ -1,0 +1,25 @@
+@media(max-width:768px){
+    .mainCard{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainCard>.card1{
+        width: 50%;
+        margin: 40px;
+    }
+     /* NAVIGATION CODE */
+     .container{
+        flex-direction: column;
+     }
+     .header>nav>ul>li{
+        display: block;
+     }
+}
+@media(min-width:768px) and (max-width:1200px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+     }
+}

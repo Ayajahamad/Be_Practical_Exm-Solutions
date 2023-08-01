@@ -1,0 +1,256 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* BUTTON CODE */
+
+.buttonAnimation{
+    border: 1px solid black;
+    line-height: 2;
+    background-color: aqua;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+.buttonAnimation>.btn{
+    padding: 15px;
+    border-radius: 10px;
+    color: red;
+    border: 2px solid lightgray;
+    transition: 2s ease-in-out;
+    animation: changeBtncolor 5s infinite;
+}
+/* .buttonAnimation>.btn:hover{
+    background-color: blue;
+    color: white;
+    border: 2px solid black;
+    transform: scale(1.1);
+} */
+@keyframes changeBtncolor {
+    0%{
+        background-color: red;
+        color: black;
+    }
+    50%{
+        background-color: blue;
+        color: white;
+    }
+    100%{
+        background-color: red;
+        color: black;
+    }   
+}
+
+/* CARDS CODE HERE */
+.mainCard{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid blue;
+    background-color: aqua;
+    padding: 50px;
+}
+.mainCard>.card1{
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    width: 20%;
+    margin: 20px;
+    line-height: 3;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgb(240, 62, 157), rgb(203, 144, 238), darkblue);
+    box-shadow: 3px 3px 3px rgb(15, 13, 13),-3px -3px 3px rgb(11, 9, 9);
+    transition: 2s ease-in-out;
+}
+.mainCard>.card1>img{
+    height: 90px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: -50px;
+    border: 2px solid black;
+}
+.mainCard>.card1:hover{
+    color: white;
+    box-shadow: 3px 3px 3px rgb(220, 212, 212),-3px -3px 3px rgb(228, 194, 194);
+    transform: scale(1.1);
+}
+.mainCard>.card1>img:hover{
+    background-color: aqua;
+}
+
+/* NAVIGATION CODE */
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    }
+    .header{
+        background-color: rgba(46, 45, 44, 0.2);
+        padding: 0 20px 0 20px;
+    }
+    .header>img{
+        height: 68px;
+        border-radius: 10px;
+        background-color: white;
+        padding: 10px;
+    }
+    .header>nav>ul{
+        list-style: none;
+    }
+    .header>nav>ul>li{
+        background-color: rgb(5, 4, 45);
+        padding: 20px;
+        display: inline-block;
+        margin: 10px;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .header>nav>ul>li>a{
+        text-decoration: none;
+        color: white;
+    }
+    .header>nav>ul>li:hover{
+        background-color: white;
+    }
+    .header>nav>ul>li:hover a{
+        color: black;
+    }
+    .header>h1{
+        background-color: white;
+        padding: 10px;
+        color: black;
+        border-radius: 10px;
+        border: 2px solid rgb(33, 38, 36);
+        box-shadow: -3px -3px 4px rgb(33, 38, 36),3px 3px 2px rgb(33, 38, 36);
+    }
+
+    /* FORM CODE HERE */
+    .forms{
+        border: 1px solid black;
+        line-height: 2;
+        text-align: center;
+        margin: 3px;
+        width: 100%;
+        border-radius: 20px;
+    }
+    span{
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    /* POPUP P5.HTML CODE HERE */
+    #openDialog{
+        margin: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid lightblue;
+        background-color: aqua;
+    }
+    .dialogBox{
+        margin: 30px;
+        background-color: lightgray;
+        color: black;
+        border-radius: 20px;
+        text-align: center;
+        width: 95%;
+    }
+    .dialogBox>button{
+        padding: 15px;
+        margin: 10px;
+        border-radius: 10px;
+        color: white;
+        background-color: black;
+        border: 1px solid black;
+    }
+    .dialogBox>h1{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .dialogBox>p{
+        text-align: justify;
+        padding: 20px;
+    }
+    .dialogBox>img{
+        height: 100px;
+        background-color: white;
+        border: 2px solid gray;
+        text-align: center;
+        margin: 20px;
+        border-radius: 20px;
+    }
+    .dialogBox>img:hover{
+        background-color: aqua;
+    }
+    h1{
+        text-align: center;
+        color: red;
+    }
+
+    /* CODE FOR DROPDOWN MENU P6.HTML*/
+    .dropDownMenu{
+        text-align: center;
+    }
+    .dropDownMenu>input{
+        padding: 10px;
+        margin: 20px;
+        border: 2px solid blue;
+    }
+    fieldset{
+        margin: 30px;
+        line-height: 2;
+        border: 2px solid blue;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    /* CODE FOR LAYOUT P7.HTML */
+    .layout{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+        position: relative;
+    }
+    .layout>.left{
+        position: fixed;
+        height: 100vh;
+        margin: 10px;
+        width: 300px;
+    }
+    .layout>.right{
+        grid-row-start: 2;
+        grid-row-end: 2;
+        width: 940px;
+        position: relative;
+        left: 320px;
+        overflow: auto;
+        background: url(../images/4.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .layout>.right>img{
+        width: 300px;
+        margin: 5px;
+    }
+
+    /* TABLE CODE HERE */
+    table,tr,td,th{
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    th:hover{
+        background-color: black;
+        color: white;
+    }
+    tr:hover{
+        color: red;
+        background-color: aqua;
+    }
+
+    
