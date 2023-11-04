@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Target</title>
+    <style>
+        .container{
+            display: flex;
+            text-align: center;
+            align-items: center;
+        }
+        .item{
+            background-color: aqua;
+            padding: 20px;
+        }
+        .item >input{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+        <label for="numbers">Enter numbers (comma-separated) Numbers : </label>
+        <input type="text" id="numbers"><br>
+
+        <label for="">Enter target : </label>
+        <input type="text" name="" id="target"><br>
+        <button onclick="targetSum()">Find Number</button>
+        </div>
+    </div>
+    <p id="result"></p>
+
+    <script>
+        function targetSum() {
+            const input = document.getElementById("numbers").value;
+            const arr = input.split(',').map(Number);
+            
+            const target = document.getElementById('target').value;
+
+            for(let i =0;i<arr.length;i++){
+            for(let j =i+1;j<=arr.length;j++){
+                if(arr[i]+arr[j] == target){
+                    console.log(arr[i]);
+                    console.log(arr[j]);
+                    document.getElementById('result').innerHTML = "Targeted Numbers = "+ arr[i] + "," + arr[j];
+                }
+            }
+        }
+        }
+    </script>
+</body>
+</html>

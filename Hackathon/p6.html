@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Parentheses(n) {
+            function backtrack(s='', left=0, right=0) {
+                if (s.length === 2 * n) {
+                    result.push(s);
+                    return;
+                }
+                if (left < n) {
+                    backtrack(s+'(', left+1, right);
+                }
+                if (right < left) {
+                    backtrack(s+')', left, right+1);
+                }
+            }
+            
+            let result = [];
+            backtrack();
+            return result;
+        }
+
+// Input n
+let n = prompt("Plz Enter the Value of n");
+document.write("" + Parentheses(n));
+console.log(Parentheses(n));
+
+    </script>
+</body>
+</html>

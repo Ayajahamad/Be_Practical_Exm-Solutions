@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          function convertToRoman(num) {
+                const romanNumerals = {
+                1: 'I',
+                4: 'IV',
+                5: 'V',
+                9: 'IX',
+                10: 'X',
+            };
+
+            const sortedKeys = Object.keys(romanNumerals)
+                .map(Number)
+                .sort((a, b) => b - a);
+
+            let romanNumeral = '';
+
+            for (let i = 0; i < sortedKeys.length; i++) {
+                const key = sortedKeys[i];
+                while (num >= key) {
+                romanNumeral += romanNumerals[key];
+                num -= key;
+                }
+            }
+
+            return romanNumeral;
+            }
+            
+            const numberToConvert = prompt('Enter a number:');
+            const romanNumeral = convertToRoman(parseInt(numberToConvert));
+            alert(`Roman numeral: ${romanNumeral}`)
+            console.log(`Roman numeral: ${romanNumeral}`);
+    </script>
+</body>
+</html>
