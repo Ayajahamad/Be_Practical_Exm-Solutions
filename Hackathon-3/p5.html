@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check repeated characters</title>
+</head>
+<body>
+    <script>
+        // 5) write a program to check repeated characters in given string or not
+        let str = "Welcome"
+        let a = str.split('')
+        for(let i = 0;i<str.length;i++){
+            for(let j = i;j<=a.length;j++){
+                if(a[i] === a[j+1]){
+                    console.log("Repeated character is : ",a[i])
+                }
+            }
+        }
+    </script>
+</body>
+</html>

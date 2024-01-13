@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrom</title>
+</head>
+<body>
+    <script>
+        // 2) Write a program to check the given string is palindrome or Not
+        let str = "malayalam"
+        
+        function strPalindrom(str){
+            let a = str.split('')
+            let b = []
+            for(let i = a.length ; i >=0 ;i--){
+                b.push(a[i])
+            }
+            rev = b.join('')
+            if(str == rev){
+                console.log("Palindrom")
+            }else{
+                console.log("Not a palindrom")
+            }
+        }
+        strPalindrom(str)
+    </script>
+</body>
+</html>

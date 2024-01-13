@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse String</title>
+</head>
+<body>
+    <script>
+        // 4) Write a program to reverse any given string 
+        let str = "welcome"
+        
+        function strPalindrom(str){
+            let a = str.split('')
+            let b = []
+            for(let i = a.length ; i >=0 ;i--){
+                b.push(a[i])
+            }
+            rev = b.join('')
+            console.log(rev)
+        }
+        strPalindrom(str)
+    </script>
+</body>
+</html>
